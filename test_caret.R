@@ -49,6 +49,6 @@ x_test <- predict(range_model, newdata = x_test)
 dummies_model <- dummyVars(~.,data = x_train, fullRank=TRUE)
 x_train <- data.frame(predict(dummies_model, newdata = x_train))
 x_test <- data.frame(predict(dummies_model, newdata = x_test))
-#test
+#testa
 skim(x_train)
 skim(x_test)
